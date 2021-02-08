@@ -19,7 +19,7 @@ const mapStateToProps = (state) => {
     //we just return the property in the state that we care about, so we wanted selectedSong 
     //the keys for these are chosen in the combineReducers function
     console.log(state);
-    return  { song : state.selectedSong } //we don't have to call the key on the left selectedSong, so we opted just for song here
+    return  { song : state.selectedSong }; //we don't have to call the key on the left selectedSong, so we opted just for song here
 };
 
 export default connect(mapStateToProps)(SongDetails); 

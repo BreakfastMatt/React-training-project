@@ -43,5 +43,6 @@ export default connect(mapStateToProps, {selectSong})(SongList); //connect(<argu
 
 /**
  * Why did we pass the selectSong action creator to connect instead of just calling it like we call other components?
- * - 
+ * - cause really it's just a basic function that returns a JS object.
+ * - Using the conenct function to call it means it links up the action properly with the reducers allowing it to be dispatched to a reducer correctly.
  */
