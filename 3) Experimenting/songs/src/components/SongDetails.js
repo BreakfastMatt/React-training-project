@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const SongDetails = ({ song }) => { 
     if(!song){ 
-        return ( <div>Select a song</div> );
+        return ( <div>Select a song (this is a delayed select for experimental purposes)</div> );
     }
     return (
         <div>

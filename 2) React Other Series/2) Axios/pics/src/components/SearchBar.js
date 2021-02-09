@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 export class SearchBar extends React.Component {
     state = { term : '' };
@@ -21,7 +20,8 @@ export class SearchBar extends React.Component {
                         {/** onChange={(event) => console.log(event.target.value)}  */}  {/** This arrow function replaces a full standalone function. */}  
                         <input 
                         type="text"  
-                        value={this.state.term}  //this is needed to ensure that it is a controlled event, maybe look into this a little bit more (re-watch that section of the vid perhaps.)
+                        //this is needed to ensure that it is a controlled event, maybe look into this a little bit more (re-watch that section of the vid perhaps.)
+                        value={this.state.term}  
                         onChange={(e) => {this.setState({term: e.target.value})}}
                         />  
                         <button type="reset" onClick={(e) => {this.setState({term: ''});}}>
